@@ -20,7 +20,7 @@
         }
         .gallery-img {
             width: 200px;
-            border-radius: 10px;
+            border-radius: 28px; /* Más redondeado */
         }
         .profile-img {
             display: block;
@@ -47,9 +47,17 @@
             </div>
         </div>
         <img src="image/profile.jpg" alt="" class="profile-img mb-4">
-    <img src="attachments/file:indexcss.html" alt="Foto de Rodrigo" class="gallery-img mb-4" style="display:block;margin:0 auto;">
+        <img src="attachments/file:indexcss.html" alt="Foto de Rodrigo" class="gallery-img mb-4" style="display:block;margin:0 auto;">
         <h2 class="mt-4">Comentarios</h2>
         <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
             <div class="mb-3">
                 <label for="mensaje" class="form-label">Comentario:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required class="form-control"></textarea>
